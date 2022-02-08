@@ -40,7 +40,7 @@ services:
             - EXECUTOR=Local
             - AIRFLOW_HOME=/usr/local/airflow
         volumes:
-            - /usr/local/airflow/building_server_postgres:/usr/local/airflow/dags
+            - ./dags:/usr/local/airflow/dags
         ports:
             - "8080:8080"
         command: webserver
@@ -52,7 +52,7 @@ services:
             retries: 3
  ```
  
- ``` docker compose up ```
+         docker compose up 
   
   ### Install custom python package
   
@@ -63,3 +63,6 @@ services:
   
   ```
   
+  ### Adding datapoint/database inside webserver
+  
+        airflow connections --add --conn_id 'data_path' --conn_type File --conn_extra '{ "path" : "data" }'
