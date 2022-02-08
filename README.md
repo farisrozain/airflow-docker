@@ -52,17 +52,28 @@ services:
             retries: 3
  ```
  
-         docker compose up 
+    docker compose up 
+    
+*The only reason why we are you pgadmin4 is because to look at whether the data is executed into postgresql after a data pipeline is executed*
   
-  ### Install custom python package
+### Install custom python package
   
-  ```
+  
   1. Create a file "requirements.txt" with the desired python modules
   2. Mount this file as a volume -v $(pwd)/requirements.txt:/requirements.txt (or add it as a volume in docker-compose file)
   3. The entrypoint.sh script execute the pip install command (with --user option)
   
-  ```
   
-  ### Adding datapoint/database inside webserver
   
-        airflow connections --add --conn_id 'data_path' --conn_type File --conn_extra '{ "path" : "data" }'
+### Adding datapoint/database inside webserver
+
+1. First thing first, gotta get into bash command inside airflow webserver.
+
+        docker exec -i -t building_server_postgres-webserver-1 /bin/bash     
+ 
+ 2. Make airflow connections with :- 
+    
+ ```
+ airflow connections --add --conn_id 'data_path' --conn_type File --conn_extra '{ "path" : "data" }'
+ airflow connections --add --conn_id 'postgres' --conn_type Postgres --conn_host 'postgres' --conn_login 'airflow' --conn_password 'airflow' --conn_schema 'airflow'
+ ```
