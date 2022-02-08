@@ -75,7 +75,7 @@ services:
  
         mkdir data
  
-3. Make airflow connections with :- 
+3. Make airflow connections with http://localhost:8080 :- 
     
 ![image](https://user-images.githubusercontent.com/61462438/152913715-7fc852b9-9888-4436-b9ad-db355e2b7bc3.png)
 `file-path`
