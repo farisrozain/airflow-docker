@@ -71,11 +71,15 @@ services:
 
         docker exec -i -t building_server_postgres-webserver-1 /bin/bash
         
-2. Make a directory.
+2. Make a directory and exit.
  
         mkdir data
+        
+3. Copy file from local into container.
+
+        docker cp raw_reading.csv building_server_postgres-webserver-1:/usr/local/airflow/data/raw_reading.csv
  
-3. Make airflow connections with http://localhost:8080 :- 
+4. Make airflow connections with http://localhost:8080 :- 
     
 ![image](https://user-images.githubusercontent.com/61462438/152913715-7fc852b9-9888-4436-b9ad-db355e2b7bc3.png)
 `file-path`
