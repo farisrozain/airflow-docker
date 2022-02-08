@@ -52,7 +52,7 @@ services:
             retries: 3
  ```
  
-    docker compose up 
+    docker-compose up -f docker-compose.yml
     
 *The only reason why we are you pgadmin4 is because to look at whether the data is executed into postgresql after a data pipeline is executed*
   
@@ -73,7 +73,7 @@ services:
  
  2. Make airflow connections with :- 
     
- ```
- airflow connections --add --conn_id 'data_path' --conn_type File --conn_extra '{ "path" : "data" }'
- airflow connections --add --conn_id 'postgres' --conn_type Postgres --conn_host 'postgres' --conn_login 'airflow' --conn_password 'airflow' --conn_schema 'airflow'
- ```
+![image](https://user-images.githubusercontent.com/61462438/152913026-0d932654-3724-40dd-841d-1d08e3bb76ab.png)
+![image](https://user-images.githubusercontent.com/61462438/152913175-5fbe41f3-5c06-49e5-8020-806751ecbb09.png)
+
+
