@@ -69,11 +69,21 @@ services:
 
 1. First thing first, gotta get into bash command inside airflow webserver.
 
-        docker exec -i -t building_server_postgres-webserver-1 /bin/bash     
+        docker exec -i -t building_server_postgres-webserver-1 /bin/bash
+        
+2. Make a directory.
  
- 2. Make airflow connections with :- 
+        mkdir data
+ 
+3. Make airflow connections with :- 
     
-![image](https://user-images.githubusercontent.com/61462438/152913026-0d932654-3724-40dd-841d-1d08e3bb76ab.png)
+![image](https://user-images.githubusercontent.com/61462438/152913715-7fc852b9-9888-4436-b9ad-db355e2b7bc3.png)
+`file-path`
 ![image](https://user-images.githubusercontent.com/61462438/152913175-5fbe41f3-5c06-49e5-8020-806751ecbb09.png)
+`postgresql`
+![image](https://user-images.githubusercontent.com/61462438/152915253-a14163a8-7b44-4958-86b3-3c4c41f18097.png)
+
+
+
 
 
