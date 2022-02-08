@@ -1,0 +1,6 @@
+id,value,local_time
+908512,"{""data"":""769a00fa03e82759002500"", ""sigfoxId"":""2C0D25"",""time"":""1641312171"",""deviceGroup"":""miniuni rain gauge v1"",""customerId"":""SAUM01"",""productId"":""5e14f7a8-3ca4-4847-9e7e-4d499b61e2ed""}",5/1/2022 0:02
+908518,"{""device"":""417CBE"",""type"":""5ef0267b2564326cffdc7d8f"",""productId"":""5e14f7a8-3ca4-4847-9e7e-4d499b61e2ed"",""customerId"":""SMTAS1"",""version"":2,""groupId"":null,""time"":1641312266,""seqNumber"":729,""data"":""0270400266""}",5/1/2022 0:04
+908519,"{""device"":""7EC20F"",""type"":""5fd8641425643206e847964c"",""time"":1641312340,""data"":""02f0000000c502580062000f"",""seqNumber"":711}",5/1/2022 0:05
+908520,"{""device"":""1F0759A"",""type"":""5f17910625643258bc50da24"",""data"":""90610c5c1163000000000000"",""time"":1641312357,""seqNumber"":800,""series"":""2mac""}",5/1/2022 0:05
+908521,"{""data"":""00c6b53a011870533d0000ce"",""sigfoxId"":""401D3A"",""time"":""1641312753"",""seqNumber"":""3869""}",5/1/2022 0:12
