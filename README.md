@@ -210,3 +210,6 @@ with DAG(dag_id="raw_reading_dag",
     is_new_data_available >> transform_data
     transform_data >> create_table >> save_into_db
 ```
+### Overview
+
+![image](https://user-images.githubusercontent.com/61462438/152916628-4f885984-b170-4c5e-b00c-59ed516e5830.png)
